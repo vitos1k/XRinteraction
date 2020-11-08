@@ -15,13 +15,6 @@ RIGHT_USER_PATH = "/user/hand/right"
 
 
 
-# in function getXR_matrix
-
-#loc = wm.xr_session_state.controller_pose0_location # Left controller for VIVE
-#rot = wm.xr_session_state.controller_pose0_rotation
-
-#loc = wm.xr_session_state.controller_pose_location0 # Left controller for Windows Mixed Reality SOMEHOW note the difference of the digit placement
-#rot = wm.xr_session_state.controller_pose_rotation0
 def getXR_matrix(wm,controller = 0):
 	if controller == 0:
 		loc = wm.xr_session_state.controller_pose0_location # Left controller.
